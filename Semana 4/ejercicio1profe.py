@@ -26,6 +26,23 @@ while continuar.lower() == "s":
 # El promedio de las calificaciones.
 promedio = sum(califcaciones.values()) / numeroestudiantes
 
+
+
+for item in califcaciones:
+    print(item)
+
+
+for item in califcaciones.values():
+    print(item)
+
+
+# {
+#     "key":"values",
+#     "Mario": 80
+# }
+
+
+
 print(califcaciones)
 print("El promedio es:", promedio)
 print("Cantidad de estudiantes:", numeroestudiantes)
