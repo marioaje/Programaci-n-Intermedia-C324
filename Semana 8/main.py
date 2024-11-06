@@ -22,3 +22,8 @@
 # Usa un diccionario llamado inventario para almacenar la información de los productos, donde las claves sean id_producto y los valores contengan otro diccionario con los detalles de cada producto.
 
 # Utiliza un menú para que el usuario pueda seleccionar la acción que desea realizar.
+# main.py
+import menu
+
+if __name__ == "__main__":
+    menu.mostrar_menu()
