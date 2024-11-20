@@ -1,0 +1,17 @@
+clave= =3v@/pqWGUJ
+ 
+base de datos: u484426513_ufpic324
+usuario: u484426513_ufpic324
+ 
+ host: srv863.hstgr.io
+
+
+MySQL es: srv863.hstgr.io o puedes usar esta IP como tu hostname: 45.88.196.5
+
+
+SELECT `id`, `idgrupo`, `idcurso`, `idprofesor` FROM `clase` WHERE 1
+SELECT `id`, `nombre`, `descripcion`, `estado` FROM `curso` WHERE 1
+SELECT `id`, `nombre`, `apellidos`, `telefono`, `correo` FROM `estudiante` WHERE 1
+SELECT `id`, `nombre`, `estado` FROM `grupo` WHERE 1
+SELECT `id`, `idgrupo`, `idestudiante` FROM `grupoclase` WHERE 1
+SELECT `id`, `nombre`, `apellido`, `telefono`, `correo` FROM `profesor` WHERE 1
