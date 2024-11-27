@@ -15,3 +15,47 @@ SELECT `id`, `nombre`, `apellidos`, `telefono`, `correo` FROM `estudiante` WHERE
 SELECT `id`, `nombre`, `estado` FROM `grupo` WHERE 1
 SELECT `id`, `idgrupo`, `idestudiante` FROM `grupoclase` WHERE 1
 SELECT `id`, `nombre`, `apellido`, `telefono`, `correo` FROM `profesor` WHERE 1
+
+
+
+
+DELETE FROM `grupoclase` WHERE 0
+
+UPDATE `grupoclase` SET `id`='[value-1]',`idgrupo`='[value-2]',`idestudiante`='[value-3]' WHERE 1
+
+INSERT INTO `grupoclase`(`id`, `idgrupo`, `idestudiante`) VALUES ('[value-1]','[value-2]','[value-3]')
+
+DELETE FROM `grupo` WHERE 0
+
+UPDATE `grupo` SET `id`='[value-1]',`nombre`='[value-2]',`estado`='[value-3]' WHERE 1
+
+INSERT INTO `grupo`(`id`, `nombre`, `estado`) VALUES ('[value-1]','[value-2]','[value-3]')
+
+DELETE FROM `estudiante` WHERE 0
+
+UPDATE `estudiante` SET `id`='[value-1]',`nombre`='[value-2]',`apellidos`='[value-3]',`telefono`='[value-4]',`correo`='[value-5]' WHERE 1
+
+INSERT INTO `estudiante`(`id`, `nombre`, `apellidos`, `telefono`, `correo`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')
+
+DELETE FROM `curso` WHERE 0
+
+UPDATE `curso` SET `id`='[value-1]',`nombre`='[value-2]',`descripcion`='[value-3]',`estado`='[value-4]' WHERE 1
+
+INSERT INTO `curso`(`id`, `nombre`, `descripcion`, `estado`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]')
+
+DELETE FROM `clase` WHERE 0
+
+UPDATE `clase` SET `id`='[value-1]',`idgrupo`='[value-2]',`idcurso`='[value-3]',`idprofesor`='[value-4]' WHERE 1
+
+INSERT INTO `clase`(`id`, `idgrupo`, `idcurso`, `idprofesor`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]')
+
+
+DELETE FROM `profesor` WHERE 0
+
+
+UPDATE `profesor` SET `id`='[value-1]',`nombre`='[value-2]',`apellido`='[value-3]',`telefono`='[value-4]',`correo`='[value-5]' WHERE 1
+
+
+INSERT INTO `profesor`(`id`, `nombre`, `apellido`, `telefono`, `correo`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')
+
+
