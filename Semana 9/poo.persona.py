@@ -58,11 +58,19 @@ class Persona:
         self.altura = altura
         self.apellidos =apellidos
         
+        
+        
+        
     def NombreActualizar(self, nombre):
         self.nombre = nombre
+
+    def setNombre(self, nombre):
+        self.nombre = nombre
         
-    def Eliminarlo(self, id):
+    def getNombre(self):
+        return self.nombre        
         
+    def Eliminarlo(self, id):        
         return "Se elimino: " + id
         
     def ActualizarDatos(self, nombre, fechanacimiento):
@@ -78,7 +86,7 @@ class Persona:
 
 usuarioMario = Persona(123,"Mario","12 setiembre","Apache","150cm",'Jimenez')
 usuarioAlberto = Persona(1234,"Albertp","12 setiembre","Apache","150cm",'Jimenez')
-
+usuarioMario.agre
 print( usuarioMario.ConsultaGeneral() )
 print( usuarioAlberto.ConsultaGeneral() )
 
